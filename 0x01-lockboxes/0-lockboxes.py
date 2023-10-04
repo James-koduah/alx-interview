@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """An alx interveiw question where we have to solve the problem of lockboxes"""
 
+
 def canUnlockAll(boxes):
     """Let's see if we can unlock all boxes"""
     search = True
