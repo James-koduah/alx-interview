@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """An implementation of the pascal Triangle"""
-from math import factorial
 
 
 def pascal_triangle(n):
