@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """An implementation of the pascal Triangle"""
 from math import factorial
 
