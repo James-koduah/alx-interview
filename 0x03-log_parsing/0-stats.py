@@ -17,8 +17,6 @@ try:
                     print(f"{code}: {value}")
         try:
             args = line.split(" ")
-            if len(args) != 9:
-                continue
             status_code = args[-2]
             file_size = args[-1]
             int(status_code)
