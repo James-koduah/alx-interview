@@ -23,11 +23,11 @@ try:
             file_size = args[-1]
             int(status_code)
             file_size = int(file_size)
-            if status_codes.get(status_code) == None: 
+            if status_codes.get(status_code) is None:
                 status_codes[status_code] = 1
             else:
                 status_codes[status_code] += 1
-                total_file_size += file_size
+            total_file_size += file_size
         except Exception as e:
             pass
         finally:
@@ -40,5 +40,3 @@ finally:
         value = status_codes.get(code)
         if value:
             print(f"{code}: {value}")
-
-
