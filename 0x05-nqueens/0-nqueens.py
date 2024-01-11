@@ -23,7 +23,6 @@ if number < 4:
     exit(1)
 
 
-
 def nqueens(n, y, board):
     """
     Method: nqueens - place n queens
@@ -54,6 +53,7 @@ def nqueens(n, y, board):
             else:
                 print(board)
             del board[-1]
+
 
 if __name__ == '__main__':
     nqueens(number, 0, [])
