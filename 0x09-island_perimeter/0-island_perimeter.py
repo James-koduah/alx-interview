@@ -14,6 +14,8 @@
     The island doesn’t have “lakes” (water inside that isn’t connected to
     the water surrounding the island).
 """
+
+
 def island_perimeter(grid):
     """function implementation for module"""
     grid_length = len(grid)
@@ -26,25 +28,25 @@ def island_perimeter(grid):
             cell = grid[i][j]
             if cell == 1:
                 # check the left
-                if j == 0: # if we are at the far left
+                if j == 0:  # if we are at the far left
                     perimeter += 1
                 elif grid[i][j - 1] == 0:
                     perimeter += 1
 
                 # check the top
-                if i == 0: # if we are at the far top
+                if i == 0:  # if we are at the far top
                     perimeter += 1
                 elif grid[i - 1][j] == 0:
                     perimeter += 1
 
                 # check the right
-                if j == grid_width - 1: # if we are at the far right
+                if j == grid_width - 1:  # if we are at the far right
                     perimeter += 1
                 elif grid[i][j + 1] == 0:
                     perimeter += 1
 
                 # check the bottom
-                if i == grid_length - 1: # if we are at the far bottom
+                if i == grid_length - 1:  # if we are at the far bottom
                     perimeter += 1
                 elif grid[i + 1][j] == 0:
                     perimeter += 1
