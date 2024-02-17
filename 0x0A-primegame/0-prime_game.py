@@ -36,6 +36,8 @@ def isWinner(x, nums):
         x is the number of rounds
         nums list with the value of each round
     """
+    if x < 1:
+        return None
     maria = 0
     ben = 0
     for i in range(x):
